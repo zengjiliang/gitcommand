@@ -60,4 +60,17 @@ git config --global user.name "youName"
  `git push -u 别名 分支名`
 
 3. 拉取远程仓库代码
- ` git clone 远程仓库地址`
+  - 第一次拉取
+  ` git clone 远程仓库地址`
+    - 其他情况
+    `git pull 别名 远程仓库名`
+    - git pull 等于
+      ```
+git fetch origin dev 把代码拉到版本库
+git merge origin/dev 把版本库的代码合并到工作区```
+
+ 
+##  git rebase  ##
+1. 多个记录整合成一个记录 
+` git rebase -i HEAD~合并记录条数
+`
