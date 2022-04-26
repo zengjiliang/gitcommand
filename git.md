@@ -44,8 +44,20 @@ git config --global user.name "youName"
 2. 创建分支
   `git branch 分支名称`
 3. 切换分支
-`git checkout 分支名称`
+ `git checkout 分支名称`
 4. 合并分支
-`git merge 要合并的分支`
+ `git merge 要合并的分支`
 5. 删除分支
-`git branch -d 分支名称`
+ `git branch -d 分支名称`
+
+
+##  上传github  ##
+
+1. 给远程仓库起个别名
+ `git remote add 别名 远程仓库地址
+`
+2. 向远程仓库推送代码
+ `git push -u 别名 分支名`
+
+3. 拉取远程仓库代码
+ ` git clone 远程仓库地址`
