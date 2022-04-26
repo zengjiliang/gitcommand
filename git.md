@@ -39,3 +39,13 @@ git config --global user.name "youName"
 
 ## git分支 ##
 
+1. 查看分支 
+  `git branch`
+2. 创建分支
+  `git branch 分支名称`
+3. 切换分支
+`git checkout 分支名称`
+4. 合并分支
+`git merge 要合并的分支`
+5. 删除分支
+`git branch -d 分支名称`
