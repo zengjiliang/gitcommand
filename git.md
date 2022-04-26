@@ -25,3 +25,13 @@ git config --global user.name "youName"
 - 暂存区
   - 通过`git commit -m '描述信息'`命令将暂存区文件添加到工作区已管理文件
 - 版本库 
+  - 回滚到之前的版本
+    ```
+    git log 
+    git reset --hard 版本号
+    ```
+ - 回滚到之后的版本
+    ```
+    git reflog
+    git reset --hard 版本号
+    ```
