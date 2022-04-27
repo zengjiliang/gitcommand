@@ -4,11 +4,11 @@
 2. 执行初始化命令 
   `git init`
 3. 查看目录下的文件状态 `git status`
-  - 红色:新增加的文件或修改过的文件
-  - 绿色:已经管理的文件
+    - 红色:新增加的文件或修改过的文件
+    - 绿色:已经管理的文件
 4. 管理文件
-  - 添加指定文件 `git add 文件名` 
-  - 添加当前目录下未管理或修改过的文件 `git add .` 
+    - 添加指定文件 `git add 文件名` 
+    - 添加当前目录下未管理或修改过的文件 `git add .` 
 5. 个人信息配置:用户名和邮箱(第一次安装git时配置):
     ```	
     git config --global user.email "you@email.com"
@@ -55,11 +55,11 @@
 2. 向远程仓库推送代码
   `git push -u 别名 分支名`
 3. 拉取远程仓库代码
-  - 第一次拉取
+    - 第一次拉取
     `git clone 远程仓库地址`
-  - 其他情况
+    - 其他情况
     `git pull 别名 远程仓库名`
-    - git pull 等于
+      - git pull 等于
         ```
         git fetch origin dev 把代码拉到版本库
         git merge origin/dev 把版本库的代码合并到工作区
