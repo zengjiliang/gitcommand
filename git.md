@@ -114,3 +114,9 @@ cmd = "\"C:/Program Files/Beyond Compare 4/BCompare.exe\" \"$REMOTE\" \"$LOCAL\"
 ``` 
  -  不保留原文件配置
     `git config --local mergetool.keepBackup false` 
+
+##  tag ##
+1. 创建tag
+  `git tag -a 标签 -m '描述信息'`
+2. 推送远端
+   `git push 别名 --tags`
