@@ -82,11 +82,11 @@
     ```
 3. 使用rebase合并分支
     1. 切回要合并的分支 
-        `git checkout 要合并的分支`
+    `git checkout 要合并的分支`
     2. 执行命令 
-        `git rebase master`
+    `git rebase master`
     3. 切回master执行命令
-        `git merge 要合并的分支`
+    `git merge 要合并的分支`
 4. 解决分叉的产生
     ```
     git fetch 别名 分支名
