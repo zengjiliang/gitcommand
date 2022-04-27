@@ -74,3 +74,43 @@ git merge origin/dev 把版本库的代码合并到工作区```
 1. 多个记录整合成一个记录 
 ` git rebase -i HEAD~合并记录条数
 `
+2. git 查看日志
+```
+git log 
+git log --graph
+git log --graph --pretty=format:"%h %s" *h 表示哈希值 s表示提交记录
+```
+3. 使用rebase合并分支
+  1. 切回要合并的分支 
+   `git checkout 要合并的分支`
+  2. 执行命令 `git rebase master`
+  3. 切回master执行命令
+    `git merge 要合并的分支`
+4. 解决分叉的产生
+```
+git fetch 别名 分支名
+git rebase 别名/分支名
+```
+
+5. gitrebase 冲突问题
+ 1. 解决冲突
+ 2. 执行`git rebase --continue`
+ 
+
+##  beyond compare ##
+- 通过配置文件.gitconfig 配置beyond compare
+  ```
+ #使用beyond compare 来查看文件差异
+[diff]
+tool = bc4
+[difftool "bc4"]
+cmd = "\"C:/Program Files/Beyond Compare 4/BCompare.exe\" \"$REMOTE\" \"$LOCAL\""
+[merge]
+tool = bc4
+[mergetool]
+promt = false
+[mergetool "bc4"]
+cmd = "\"C:/Program Files/Beyond Compare 4/BCompare.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" "
+``` 
+ -  不保留原文件配置
+    `git config --local mergetool.keepBackup false` 
