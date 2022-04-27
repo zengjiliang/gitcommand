@@ -9,12 +9,12 @@
     - 添加指定文件 `git add 文件名` 
     - 添加当前目录下未管理或修改过的文件 `git add .` 
 5. 个人信息配置:用户名和邮箱(第一次安装git时配置):
-        ```	
-        git config --global user.email "you@email.com" 
-        git config --global user.name "youName"
-        ```
+    ```	
+    git config --global user.email "you@email.com"
+    git config --global user.name "youName"
+    ```
 6. 生成版本
-     - `git commit -m '描述信息'`
+   `git commit -m '描述信息'`
 
 ## git三大区域 ##
 
@@ -73,8 +73,7 @@
  
 ##  git rebase  ##
 1. 多个记录整合成一个记录 
-    ` git rebase -i HEAD~合并记录条数
-    `
+    ` git rebase -i HEAD~合并记录条数`
 2. git 查看日志
     ```
     git log 
@@ -82,25 +81,25 @@
     git log --graph --pretty=format:"%h %s" *h 表示哈希值 s表示提交记录
     ```
 3. 使用rebase合并分支
-  1. 切回要合并的分支 
-   `git checkout 要合并的分支`
-  2. 执行命令 `git rebase master`
-  3. 切回master执行命令
-    `git merge 要合并的分支`
+    1. 切回要合并的分支 
+        `git checkout 要合并的分支`
+    2. 执行命令 
+        `git rebase master`
+    3. 切回master执行命令
+        `git merge 要合并的分支`
 4. 解决分叉的产生
     ```
     git fetch 别名 分支名
     git rebase 别名/分支名
     ```
-
 5. gitrebase 冲突问题
  1. 解决冲突
- 2. 执行`git rebase --continue`
+ 2. 执行
+    `git rebase --continue`
  
 
 ##  beyond compare ##
 - 通过配置文件.gitconfig 配置beyond compare
-
   ```
     #使用beyond compare 来查看文件差异
     [diff]
@@ -114,7 +113,7 @@
     [mergetool "bc4"]
     cmd = "\"C:/Program Files/Beyond Compare 4/BCompare.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" "
     ``` 
- - 不保留原文件配置
+ - 不保留原文件
    `git config --local mergetool.keepBackup false` 
 
 ##  tag ##
